@@ -3,6 +3,59 @@
 <html>
 <!-- block elements take up all of the page, they block a section of the page; div -->
 <!-- inline elements take up only however much is needed; span -->
+<style>
+    body {
+        margin: 0;
+    }
+
+    .bg-light-blue-100 {
+        background-color: lightblue;
+    }
+
+    .accent {
+        background-color: #1D7874;
+    }
+
+    .text-white {
+        color: white;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .justify-between {
+        justify-content: space-between;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .justify-start {
+        justify-content: start;
+    }
+
+    .item-center {
+        align-items: center;
+    }
+</style>
 
 <head>
     <!-- <script src="login.js"></script> -->
@@ -12,21 +65,19 @@
     <meta name="keywords" content="sample page, basic html, html website, bthml, website, page, basic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cinnamon girl</title>
+    <header class="accent text-white ">
+        <div>
+            <h1 class="item-center inline-block">our website</h1>
+        </div>
+        <div class="bg-light-blue-100 flex justify-start">
+            <a href="">top</a>
+            <a href="nav.html">nav</a>
+        </div>
+        <div style="color: bisque; padding-top: 0.67em;" class="block accent">
+    </header>
 </head>
 
-<body style="background-color: lightblue;">
-    <header>
-        <div style="background-color: lightcoral; color: bisque;">
-            <hr />
-            <h1> our website </h1>
-            <hr />
-        </div>
-        <nav>top | <a href="nav.html">nav</a></nav>
-        <div style="background-color: lightcoral; color: bisque;">
-            <hr />
-            <hr />
-        </div>
-    </header>
+<body class="bg-light-blue-100">
     <main>
         <article>
             <h2>
@@ -48,7 +99,7 @@
             This is the normal article
             <aside> this isn't as important </aside>
             <table>
-                <tr>
+                <tr class="flex" style="flex-wrap: wrap;">
                     <td>
                         <form>
                             <input type="text" />
@@ -66,7 +117,7 @@
                     </td>
 
                 </tr>
-                <tr>
+                <tr class="flex justify-between">
                     <td>
                         <input type="range" />
                     </td>
@@ -83,7 +134,7 @@
                     </td>
 
                 </tr>
-                <tr>
+                <tr class="flex">
                     <td colspan="2">
                         <textarea rows="5" cols="36"></textarea>
                     </td>
@@ -105,7 +156,7 @@
         <a href="https://play.stan.com.au/programs/3019990" target="_blank">
             <h4><b>yer a wizard harry</b></h4>
         </a>
-        <iframe src="https://www.a11yproject.com/about/" width="700" height="300" frameborder="0">harry
+        <iframe src="https://www.a11yproject.com/about/" width="200" height="100" frameborder="0">harry
             did you put your name
             in the goblet of fire dumbledore asked calmly</iframe>
         <p>
